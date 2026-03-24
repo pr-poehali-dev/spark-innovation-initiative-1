@@ -1,5 +1,5 @@
 const navLinks = [
-  { href: "#features", label: "Тренировки" },
+  { href: "#trainer", label: "Тренер" },
   { href: "#testimonials", label: "Отзывы" },
   { href: "#pricing", label: "Абонементы" },
 ]
@@ -22,7 +22,9 @@ export function Navbar() {
             </a>
           ))}
           <a
-            href="#pricing"
+            href="https://vk.com/im?sel=89033221123"
+            target="_blank"
+            rel="noopener noreferrer"
             className="ml-2 px-4 py-1.5 text-sm rounded-full bg-zinc-100 text-zinc-900 font-medium hover:bg-zinc-200 transition-colors"
           >
             Записаться

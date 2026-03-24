@@ -104,7 +104,9 @@ export function PricingSection() {
 
               {/* CTA */}
               <a
-                href="#"
+                href="https://vk.com/im?sel=89033221123"
+                target="_blank"
+                rel="noopener noreferrer"
                 className={`block w-full py-3 px-6 text-center rounded-full font-medium text-sm transition-colors mt-auto ${
                   plan.highlighted
                     ? "bg-zinc-900 text-zinc-100 hover:bg-zinc-800"

@@ -10,14 +10,14 @@ export function CtaSection() {
           Присоединяйся к 500+ клиентам GreenGo Fitness. Первая тренировка — бесплатно, без обязательств.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href="#pricing">
-            <LiquidCtaButton>Записаться на тренировку</LiquidCtaButton>
+          <a href="https://vk.com/im?sel=89033221123" target="_blank" rel="noopener noreferrer">
+            <LiquidCtaButton>Записаться к тренеру</LiquidCtaButton>
           </a>
           <a
-            href="#"
+            href="tel:+79033221123"
             className="group flex items-center gap-2 px-6 py-3 text-sm font-medium text-zinc-400 hover:text-zinc-100 transition-colors"
           >
-            <span>Узнать об абонементах</span>
+            <span>+7 903 322-11-23</span>
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
           </a>
         </div>

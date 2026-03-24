@@ -3,9 +3,16 @@ import { Sparkles, ArrowRight } from "lucide-react"
 
 export function HeroSection() {
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center px-6 pt-24 pb-20 relative">
-      {/* Background gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-zinc-900/50 via-transparent to-transparent" />
+    <section className="min-h-screen flex flex-col items-center justify-center px-6 pt-24 pb-20 relative overflow-hidden">
+      {/* Background gym photo */}
+      <div className="absolute inset-0">
+        <img
+          src="https://cdn.poehali.dev/projects/3c8a66b5-d534-411a-92f4-aaf844704f1c/files/c20e1d76-49b3-4c2a-9ac8-3fb5342decae.jpg"
+          alt="GreenGo Fitness зал"
+          className="w-full h-full object-cover opacity-20"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-zinc-950/80 via-zinc-950/60 to-zinc-950" />
+      </div>
 
       {/* Content */}
       <div className="relative z-10 text-center max-w-3xl mx-auto">
@@ -25,19 +32,19 @@ export function HeroSection() {
 
         {/* Subheadline - describe your product */}
         <p className="text-lg md:text-xl text-zinc-500 max-w-2xl mx-auto mb-10 leading-relaxed text-balance">
-          Профессиональные силовые тренировки для всех — мужчин, женщин и подростков. Персональный подход, современное оборудование и реальные результаты.
+          Персональные онлайн-тренировки по силовой подготовке. Я составляю программу, контролирую результаты и веду тебя к цели — откуда угодно.
         </p>
 
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href="#pricing">
-            <LiquidCtaButton>Записаться на тренировку</LiquidCtaButton>
+          <a href="https://vk.com/im?sel=89033221123" target="_blank" rel="noopener noreferrer">
+            <LiquidCtaButton>Записаться к тренеру</LiquidCtaButton>
           </a>
           <a
-            href="#features"
+            href="#trainer"
             className="group flex items-center gap-2 px-6 py-3 text-sm font-medium text-zinc-400 hover:text-zinc-100 transition-colors"
           >
-            <span>Узнать больше</span>
+            <span>О тренере</span>
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
           </a>
         </div>
