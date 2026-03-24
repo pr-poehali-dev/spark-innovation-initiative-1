@@ -12,32 +12,32 @@ export function HeroSection() {
         {/* Badge - customize your announcement */}
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-zinc-900/80 border border-zinc-800 mb-8">
           <Sparkles className="w-4 h-4 text-zinc-400" />
-          <span className="text-sm text-zinc-400">Встречайте v2.0 — теперь с ИИ</span>
+          <span className="text-sm text-zinc-400">GreenGo Fitness — клуб силовой подготовки</span>
         </div>
 
         {/* Headline - customize your value proposition */}
         <h1 className="font-display text-5xl md:text-7xl font-bold tracking-tight mb-6">
-          <span className="text-zinc-100 block">Создавай быстрее.</span>
-          <span className="bg-gradient-to-r from-zinc-500 via-zinc-300 to-zinc-500 bg-clip-text text-transparent">
-            Запускай умнее.
+          <span className="text-zinc-100 block">Стань сильнее.</span>
+          <span className="bg-gradient-to-r from-green-600 via-green-400 to-green-600 bg-clip-text text-transparent">
+            Тренируйся умнее.
           </span>
         </h1>
 
         {/* Subheadline - describe your product */}
         <p className="text-lg md:text-xl text-zinc-500 max-w-2xl mx-auto mb-10 leading-relaxed text-balance">
-          Единая платформа, которая помогает командам создавать, развертывать и масштабировать продукты в 10 раз быстрее. Без сложностей, только результат.
+          Профессиональные силовые тренировки для всех — мужчин, женщин и подростков. Персональный подход, современное оборудование и реальные результаты.
         </p>
 
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a href="#pricing">
-            <LiquidCtaButton>Попробовать бесплатно</LiquidCtaButton>
+            <LiquidCtaButton>Записаться на тренировку</LiquidCtaButton>
           </a>
           <a
             href="#features"
             className="group flex items-center gap-2 px-6 py-3 text-sm font-medium text-zinc-400 hover:text-zinc-100 transition-colors"
           >
-            <span>Как это работает</span>
+            <span>Узнать больше</span>
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
           </a>
         </div>
@@ -94,7 +94,7 @@ export function HeroSection() {
                 <span className="text-zinc-400 font-medium ml-1 text-sm">5.0</span>
               </div>
               <p className="text-sm text-zinc-500">
-                Нам доверяют <span className="text-zinc-300 font-medium">10 000+</span> разработчиков
+                Нам доверяют <span className="text-zinc-300 font-medium">500+</span> клиентов клуба
               </p>
             </div>
           </div>

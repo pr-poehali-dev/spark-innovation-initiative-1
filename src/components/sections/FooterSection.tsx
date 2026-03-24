@@ -2,21 +2,21 @@ import { Github, Twitter, Linkedin } from "lucide-react"
 
 const footerLinks = {
   product: [
-    { label: "Функции", href: "#features" },
-    { label: "Тарифы", href: "#pricing" },
-    { label: "Обновления", href: "#" },
-    { label: "Документация", href: "#" },
+    { label: "Тренировки", href: "#features" },
+    { label: "Абонементы", href: "#pricing" },
+    { label: "Отзывы", href: "#testimonials" },
+    { label: "Расписание", href: "#" },
   ],
   company: [
-    { label: "О нас", href: "#" },
-    { label: "Блог", href: "#" },
-    { label: "Вакансии", href: "#" },
+    { label: "О клубе", href: "#" },
+    { label: "Тренеры", href: "#" },
+    { label: "Галерея", href: "#" },
     { label: "Контакты", href: "#" },
   ],
   legal: [
-    { label: "Приватность", href: "#" },
+    { label: "Политика", href: "#" },
     { label: "Условия", href: "#" },
-    { label: "Безопасность", href: "#" },
+    { label: "Оферта", href: "#" },
   ],
 }
 
@@ -28,10 +28,10 @@ export function FooterSection() {
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
             <a href="/" className="font-display text-xl font-semibold text-zinc-100">
-              Velocite
+              GreenGo <span className="text-green-400">Fitness</span>
             </a>
             <p className="mt-4 text-sm text-zinc-500 max-w-xs">
-              Создавай быстрее, запускай умнее. Платформа для современных команд.
+              Силовая подготовка для мужчин, женщин и подростков. Твой результат — наша цель.
             </p>
           </div>
 
@@ -80,7 +80,7 @@ export function FooterSection() {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-zinc-900 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-zinc-600">© {new Date().getFullYear()} Velocite. Все права защищены.</p>
+          <p className="text-sm text-zinc-600">© {new Date().getFullYear()} GreenGo Fitness. Все права защищены.</p>
           <div className="flex items-center gap-4">
             <a href="#" className="text-zinc-500 hover:text-zinc-300 transition-colors" aria-label="GitHub">
               <Github className="w-5 h-5" />

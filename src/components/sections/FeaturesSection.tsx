@@ -25,12 +25,12 @@ export function FeaturesSection() {
           transition={{ duration: 0.5 }}
           className="text-center mb-12"
         >
-          <p className="text-sm font-medium text-zinc-500 uppercase tracking-wider mb-4">Функции</p>
+          <p className="text-sm font-medium text-zinc-500 uppercase tracking-wider mb-4">Тренировки</p>
           <h2 className="font-display text-3xl md:text-4xl font-bold text-zinc-100 mb-4">
-            Все для вашего успеха
+            Всё для твоего результата
           </h2>
           <p className="text-zinc-500 max-w-xl mx-auto text-balance">
-            Мощные инструменты, которые помогут выпускать продукты быстрее.
+            Силовая подготовка, персональный план и поддержка тренера на каждом шагу.
           </p>
         </motion.div>
 
@@ -53,10 +53,10 @@ export function FeaturesSection() {
                   >
                     <BarChart3 className="w-5 h-5 text-zinc-400 group-hover:text-zinc-200 transition-colors" />
                   </motion.div>
-                  <p className="font-heading font-semibold text-zinc-100">Дашборд в реальном времени</p>
+                  <p className="font-heading font-semibold text-zinc-100">Прогресс в реальном времени</p>
                 </div>
                 <p className="text-zinc-500 text-sm mb-5">
-                  Отслеживайте важные метрики с настраиваемыми панелями.
+                  Отслеживайте рост силы, веса и объёмов тренировок в личном кабинете.
                 </p>
                 <div className="rounded-xl border border-zinc-800 bg-zinc-950 p-4 overflow-hidden">
                   <div className="flex items-center justify-between mb-4">
@@ -74,7 +74,7 @@ export function FeaturesSection() {
                         transition={{ delay: 0.5 }}
                       >
                         <div className="w-2 h-2 rounded-full bg-zinc-400" />
-                        <span className="text-xs text-zinc-500">Пользователи</span>
+                        <span className="text-xs text-zinc-500">Сила</span>
                       </motion.div>
                       <motion.div
                         className="flex items-center gap-1.5"
@@ -84,16 +84,16 @@ export function FeaturesSection() {
                         transition={{ delay: 0.6 }}
                       >
                         <div className="w-2 h-2 rounded-full bg-zinc-600" />
-                        <span className="text-xs text-zinc-500">Выручка</span>
+                        <span className="text-xs text-zinc-500">Объём</span>
                       </motion.div>
                     </div>
                   </div>
                   {/* Animated metrics row */}
                   <div className="grid grid-cols-3 gap-3 mb-4">
                     {[
-                      { label: "Пользователи", value: "12,4 тыс", change: "+12%" },
-                      { label: "Выручка", value: "4,8 млн ₽", change: "+8%" },
-                      { label: "Конверсия", value: "3,2%", change: "+2%" },
+                      { label: "Жим лёжа", value: "120 кг", change: "+15%" },
+                      { label: "Приседания", value: "160 кг", change: "+10%" },
+                      { label: "Становая", value: "180 кг", change: "+8%" },
                     ].map((metric, i) => (
                       <motion.div
                         key={metric.label}
@@ -162,9 +162,9 @@ export function FeaturesSection() {
                   >
                     <Zap className="w-5 h-5 text-zinc-400 group-hover:text-zinc-200 transition-colors" />
                   </motion.div>
-                  <p className="font-heading font-semibold text-zinc-100">Молниеносная скорость</p>
+                  <p className="font-heading font-semibold text-zinc-100">Персональный тренер</p>
                 </div>
-                <p className="text-zinc-500 text-sm mb-5">Оптимизировано для скорости на любом масштабе.</p>
+                <p className="text-zinc-500 text-sm mb-5">Индивидуальный план тренировок под ваши цели и уровень.</p>
                 <div className="mt-auto">
                   <div className="flex items-baseline gap-2 mb-3">
                     <motion.span
@@ -173,9 +173,9 @@ export function FeaturesSection() {
                       whileInView={{ opacity: 1 }}
                       viewport={{ once: true }}
                     >
-                      99.9%
+                      100%
                     </motion.span>
-                    <span className="text-zinc-500 text-sm">аптайм</span>
+                    <span className="text-zinc-500 text-sm">результат</span>
                   </div>
                   <div className="h-2 bg-zinc-800 rounded-full overflow-hidden">
                     <motion.div
@@ -208,11 +208,11 @@ export function FeaturesSection() {
                   >
                     <Command className="w-5 h-5 text-zinc-400 group-hover:text-zinc-200 transition-colors" />
                   </motion.div>
-                  <p className="font-heading font-semibold text-zinc-100">Сначала клавиатура</p>
+                  <p className="font-heading font-semibold text-zinc-100">Групповые тренировки</p>
                 </div>
-                <p className="text-zinc-500 text-sm mb-5">Любое действие на расстоянии одной клавиши.</p>
+                <p className="text-zinc-500 text-sm mb-5">Энергия команды заряжает. Тренируйся вместе с единомышленниками.</p>
                 <div className="flex justify-center gap-2 mt-auto">
-                  {["Cmd", "K"].map((key, i) => (
+                  {["💪", "🔥", "🏆"].map((key, i) => (
                     <motion.div
                       key={key}
                       className="flex items-center justify-center w-12 h-12 rounded-xl bg-zinc-800/80 border border-zinc-700/50 shadow-lg"
@@ -226,7 +226,7 @@ export function FeaturesSection() {
                       }}
                       whileHover={{ scale: 1.1, y: -4 }}
                     >
-                      <span className="text-zinc-300 font-mono text-lg">{key}</span>
+                      <span className="text-2xl">{key}</span>
                     </motion.div>
                   ))}
                 </div>
@@ -252,21 +252,21 @@ export function FeaturesSection() {
                   >
                     <Layers className="w-5 h-5 text-zinc-400 group-hover:text-zinc-200 transition-colors" />
                   </motion.div>
-                  <p className="font-heading font-semibold text-zinc-100">100+ интеграций</p>
+                  <p className="font-heading font-semibold text-zinc-100">Современное оборудование</p>
                 </div>
-                <p className="text-zinc-500 text-sm mb-5">Подключайте инструменты, которыми пользуетесь ежедневно.</p>
+                <p className="text-zinc-500 text-sm mb-5">Всё необходимое для силовых тренировок: штанги, гантели, тренажёры и зоны для кардио.</p>
                 <div className="grid grid-cols-8 gap-2 mt-auto">
-                  {integrationLogos.map((logo, i) => (
+                  {["🏋️", "💪", "🔩", "⚡", "🥊", "🧘", "🎯", "🏆"].map((emoji, i) => (
                     <motion.div
-                      key={logo.name}
+                      key={i}
                       initial={{ opacity: 0, y: 10 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}
                       transition={{ duration: 0.3, delay: 0.3 + i * 0.05 }}
                       whileHover={{ scale: 1.15, y: -2 }}
-                      className="aspect-square rounded-lg border border-zinc-800 bg-zinc-800/50 flex items-center justify-center cursor-pointer"
+                      className="aspect-square rounded-lg border border-zinc-800 bg-zinc-800/50 flex items-center justify-center cursor-pointer text-xl"
                     >
-                      <div className="w-5 h-5 rounded bg-zinc-700" />
+                      {emoji}
                     </motion.div>
                   ))}
                 </div>
@@ -274,7 +274,7 @@ export function FeaturesSection() {
                   whileHover={{ x: 6 }}
                   className="mt-4 flex items-center gap-1.5 text-sm text-zinc-500 hover:text-zinc-300 transition-colors"
                 >
-                  Все интеграции <ArrowRight className="w-4 h-4" />
+                  Записаться на экскурсию <ArrowRight className="w-4 h-4" />
                 </motion.button>
               </CardContent>
             </Card>
